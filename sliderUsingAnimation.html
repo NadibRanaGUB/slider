@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+       .slderbacrkground{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .MoreInFo{
+            position: absolute;
+            background-color: transparent;
+            color: rgb(12, 15, 16);
+            top: 90%;
+            right: 40%;
+            transition: 4s;
+        }
+        .MoreInFo:hover{
+            cursor: pointer;
+            color: rgb(10, 11, 11);
+            background-color: aquamarine;
+           
+        }
+        .slider{
+            width: 400px;
+            height: 400px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            animation:sliderImage 20s infinite;
+        }
+        @keyframes sliderImage {
+            0%{
+                background-image: url(img/GUBwithMe.jpg);
+                background-size: 400px;
+                border-radius: 10%;
+            }
+            50%{
+                background-image: url(img/IMG_20230220_205957.jpg);
+                background-size: 400px;
+                border-radius: 10%;
+            }
+            100%{
+                background-image: url(img/IMG20240303113547\ \(2\).jpg);
+                background-size: 400px;
+                border-radius: 10%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="slderbacrkground">
+       <div class="slider">
+           <h1>My Pictures</h1>
+            <a href="">
+               <Button class="MoreInFo">More Information</Button>
+            </a>
+        </div>
+   </div>
+</body>
+</html>
